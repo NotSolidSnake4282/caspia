@@ -6,3 +6,4 @@ WORKDIR /${CODE}
 COPY requirements.txt /${CODE}/
 RUN pip install -r requirements.txt
 COPY . /${CODE}/
+RUN mkdir /var/www/static/
